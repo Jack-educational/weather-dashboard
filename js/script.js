@@ -66,20 +66,29 @@ function displayWeather(forecastjson) {
     ]
 
     // fetch the weather icon using the code from json data
-    var iconURL = "http://openweathermap.org/img/w/" + weatherNow[0].icon + ".png"; 
-    // setting src attribute for the weather icon image in the DOM
-    $('#icon-from-url').attr('src', iconURL);
+    var iconURL = "http://openweathermap.org/img/w/" + weatherNow[0].icon + ".png";
+
+    // write the img tag with the src attribute to the DOM
+    $('#icon-from-url').html('<img src="' + iconURL + '" alt="Weather icon">');
+
+    // // setting src attribute for the weather icon image in the DOM
+    // $('#icon-from-url').attr('src', iconURL);
 
     // trim the date only from datetime string and wrap in parentheses
     dateToday = "(" + weatherNow[0].datetime.substring(0, 10) + ")";
 
-    // set the src attributes for daily data in the DOM 
+    // set the attributes for daily data in the DOM 
     $('#city-name').text(weatherNow[0].city);
     $('#current-date').text(dateToday);
-    $('#current-temp').text(weatherNow[0].temp.toFixed(2) + " °C");
-    $('#current-humidity').text(weatherNow[0].humidity + "%");
-    $('#current-wind').text(weatherNow[0].wind + " km/h");
+    
+    // write the text and the value of the temperature to the DOM
+    $('#current-temp').text("Temperature: " + (weatherNow[0].temp.toFixed(2) + " °C"));
 
+    // write the text and the value of the wind speed to the DOM
+    $('#current-wind').text("Wind :" + (weatherNow[0].wind + " km/h"));
+
+    // write the text and the value of the humidity to the DOM
+    $('#current-humidity').text("Humidity: " + (weatherNow[0].humidity + "%"));
 
 
     // print the first entry of the array to the console
@@ -97,7 +106,15 @@ $(document).ready(function() {
         let city = $("#search-input").val();
         getCoordinates(city);
     });
+
+    $(".history-button").click(function(event) {
+        event.preventDefault();
+        let city = $(this).attr("data-city");
+        getCoordinates(city);
+    });
 });
+
+
 
 
 
