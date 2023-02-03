@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/styles.css" />
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   
   <!--Font Awesome 5-->
@@ -88,11 +88,7 @@
 
               <h2 class="card-title" id="current-date"></h2>
               <div id="icon-from-url"></div>
-
-              <!-- <img src="" alt="weather icon" id="icon-from-url" /> -->
               </div>
-              
-              
               <div class="row">
                 <div class="col-6">
                   <span>
@@ -112,18 +108,99 @@
               </div>
             </div>
           </div>
-
-
         </section>
+
         <section id="forecast" class="row mt-3" role="region" aria-live="polite">
+          <div class="col-12">
+            <h2 class="h3">5-Day Forecast:</h2>
+          </div>
 
+          <div id="container" class="forecast-cards">
+            <div class="card col-2" id="day-1">
+              <div class="card-body">
+                <h5 class="card-title" id="day-1-date"></h5>
+                <img src="" alt="weather icon" id="day-1-icon" />
+                <p class="card-text" id="day-1-temp">
+                  <span>Temp: </span>
+                </p>
+                <p class="card-text" id="day-1-wind">
+                  <span>Wind: </span>
+                </p>
+                <p class="card-text" id="day-1-humidity">
+                  <span>Humidity: </span>
+                </p>
+              </div>
+            </div>
+            <div class="card col-2" id="day-2">
+              <div class="card-body">
+                <h5 class="card-title" id="day-2-date"></h5>
+                <img src="" alt="weather icon" id="day-2-icon" />
+                <p class="card-text" id="day-2-temp">
+                  <span>Temp: </span>
+                </p>
+                <p class="card-text" id="day-2-wind">
+                  <span>Wind: </span>
+                </p>
+                <p class="card-text" id="day-2-humidity">
+                  <span>Humidity: </span>
+                </p>
+              </div>
+            </div>
+            <div class="card col-2" id="day-3">
+              <div class="card-body">
+                <h5 class="card-title" id="day-3-date"></h5>
+                <img src="" alt="weather icon" id="day-3-icon" />
+                <p class="card-text" id="day-3-temp">
+                  <span>Temp: </span>
+                </p>
+                <p class="card-text" id="day-3-wind">
+                  <span>Wind: </span>
+                </p>
+                <p class="card-text" id="day-3-humidity">
+                  <span>Humidity: </span>
+                </p>
+              </div>
+            </div>
+            <div class="card col-2" id="day-4">
+              <div class="card-body">
+                <h5 class="card-title" id="day-4-date"></h5>
+                <img src="" alt="weather icon" id="day-4-icon" />
+                <p class="card-text" id="day-4-temp">
+                  <span>Temp: </span>
+                </p>
+                <p class="card-text" id="day-4-wind">
+                  <span>Wind: </span>
+                </p>
+                <p class="card-text" id="day-4-humidity">
+                  <span>Humidity: </span>
+                </p>
+              </div>
+            </div>
 
-
+            <div class="card col-2" id="day-5">
+              <div class="card-body">
+                <h5 class="card-title" id="day-5-date"></h5>
+                <img src="" alt="weather icon" id="day-5-icon" />
+                <p class="card-text" id="day-5-temp">
+                  <span>Temp: </span>
+                </p>
+                <p class="card-text" id="day-5-wind">
+                  <span>Wind: </span>
+                </p>
+                <p class="card-text" id="day-5-humidity">
+                  <span>Humidity: </span>
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-timezone-with-data.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-timezone.min.js"></script>
   <!-- Moment.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <!-- jQuery -->

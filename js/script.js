@@ -85,7 +85,7 @@ function displayWeather(forecastjson) {
     $('#current-temp').text("Temperature: " + (weatherNow[0].temp.toFixed(2) + " °C"));
 
     // write the text and the value of the wind speed to the DOM
-    $('#current-wind').text("Wind :" + (weatherNow[0].wind + " km/h"));
+    $('#current-wind').text("Wind: " + (weatherNow[0].wind + " km/h"));
 
     // write the text and the value of the humidity to the DOM
     $('#current-humidity').text("Humidity: " + (weatherNow[0].humidity + "%"));
