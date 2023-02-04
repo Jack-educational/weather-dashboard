@@ -6,8 +6,22 @@
 .forecast-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 20px;
+}
+
+.card-title {
+    font-size: 1 rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.card-text {
+    font-size: 1 rem;
+    margin: 0;
+    padding: 10px 0;
+    /* text-align: center; */
 }
