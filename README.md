@@ -19,7 +19,7 @@ https://jack-educational.github.io/weather-dashboard/
 - [Questions](#questions)
 
   ## Installation
-  Simply navigate to the live deployment URL at the top of the readme and start by clicking generate password
+  Simply navigate to the live deployment URL at the top of the readme and enter the city you want to search for and click search. No installation required.
   
   ## Usage
   Enter the nme of the city you want a forecast of and click search. A history of recent searches will be found underneath for easy searching later.
